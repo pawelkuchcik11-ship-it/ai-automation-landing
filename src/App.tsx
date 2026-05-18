@@ -20,7 +20,7 @@ export default function App() {
     try {
       setStatus("Sending...");
 
-      await fetch("https://mysaveplace.app.n8n.cloud/webhook-test/lead-form", {
+      await fetch("https://mysaveplace.app.n8n.cloud/webhook/lead-form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
