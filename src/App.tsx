@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 
 const WEBHOOK_URL = "https://mysaveplace.app.n8n.cloud/webhook/lead-form";
 const CALENDLY_URL = "https://calendly.com/pawel-kuchcik11/30min";
