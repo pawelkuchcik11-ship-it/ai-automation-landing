@@ -40,7 +40,7 @@ export default function App() {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#050505] text-white">
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
   <div className="absolute left-[-10%] top-[10%] h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-3xl" />
 
