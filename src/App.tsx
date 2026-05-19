@@ -40,6 +40,38 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-[#050505] text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
+    <div className="flex items-center gap-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-black font-black">
+        N
+      </div>
+
+      <div>
+        <p className="text-sm font-semibold">Nodewave</p>
+        <p className="text-xs text-zinc-500">
+          AI Automation Studio
+        </p>
+      </div>
+    </div>
+
+    <nav className="hidden items-center gap-8 text-sm text-zinc-400 md:flex">
+      <a href="#how-it-works" className="transition hover:text-white">
+        How it works
+      </a>
+
+      <a href="#contact" className="transition hover:text-white">
+        Contact
+      </a>
+
+      <a href="#contact" className="rounded-xl border border-white/10 bg-white/5 px-5 py-2 text-white transition hover:bg-white/10">
+        Get Free Audit
+      </a>
+    </nav>
+
+  </div>
+</header>
       <section className="relative overflow-hidden border-b border-white/10 bg-black text-white">
   <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-black to-black opacity-90"></div>
 
