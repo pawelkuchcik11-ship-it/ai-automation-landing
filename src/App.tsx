@@ -42,7 +42,7 @@ export default function App() {
     <main className="relative min-h-screen overflow-hidden bg-[#050505] text-white">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
-  <div className="absolute left-[-10%] top-[10%] h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-3xl" />
+  <div className="absolute left-[-10%] top-[10%] h-[500px] w-[420px] rounded-full bg-emerald-500/10 blur-3xl" />
 
   <div className="absolute right-[-10%] top-[20%] h-[400px] w-[400px] rounded-full bg-blue-500/10 blur-3xl" />
 
@@ -75,7 +75,7 @@ export default function App() {
       </a>
 
       <a href="#contact" className="rounded-xl border border-white/10 bg-white/5 px-5 py-2 text-white transition hover:bg-white/10">
-        Get Free Audit
+        Get Custom Automation Plan
       </a>
     </nav>
 
@@ -100,7 +100,7 @@ export default function App() {
         </span>
       </h1>
 
-      <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-400">
+      <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
         We build AI systems that capture leads, respond instantly,
         organize customer communication and save hours every week.
       </p>
@@ -112,14 +112,14 @@ export default function App() {
           target="_blank"
           className="rounded-xl bg-white px-6 py-4 text-center font-semibold text-black transition-all duration-300 hover:scale-[1.03] hover:bg-zinc-200 hover:shadow-2xl"
         >
-          Book Free Consultation
+          Book Strategy Call
         </a>
 
         <a
-          href="#audit"
+          href="#contact"
           className="rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-center font-semibold text-white backdrop-blur transition hover:bg-white/10"
         >
-          Get Free Audit
+          Get Custom Automation Plan
         </a>
 
       </div>
@@ -144,7 +144,7 @@ export default function App() {
 
     <div className="mt-16 lg:mt-8">
       
-      <div className="w-full max-w-md rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+      <div className="w-full max-w-lg rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl shadow-[0_0_80px_rgba(255,255,255,0.06)]">
         
         <div className="mb-4 flex items-center justify-between">
           <div>
@@ -206,6 +206,26 @@ export default function App() {
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section className="border-b border-white/10 bg-black px-6 py-12 text-white">
+  <div className="mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+    <p className="text-sm uppercase tracking-[0.25em] text-zinc-500">
+      Trusted automation systems for local service businesses
+    </p>
+
+    <div className="grid gap-4 text-sm text-zinc-400 sm:grid-cols-3">
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
+        Dental clinics
+      </div>
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
+        Real estate teams
+      </div>
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
+        Local agencies
+      </div>
     </div>
   </div>
 </section>
@@ -296,7 +316,7 @@ export default function App() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="rounded-[2rem] border border-white/10 bg-black p-8">
+          <form onSubmit={handleSubmit} className="rounded-[2rem] border border-white/10 bg-black p-10">
             <div className="space-y-4">
               <input name="name" required placeholder="Your name (Twoje imię)" className="w-full rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 outline-none transition focus:border-yellow-400" />
               <input name="email" type="email" required placeholder="Your email (Twój email)" className="w-full rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 outline-none transition focus:border-yellow-400" />
