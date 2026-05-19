@@ -169,6 +169,75 @@ export default function App() {
   </div>
 </section>
 
+<section className="border-b border-white/10 bg-[#070707] px-6 py-24 text-white">
+  <div className="mx-auto max-w-7xl">
+
+    <div className="max-w-2xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.3em] text-green-400">
+        How it works
+      </p>
+
+      <h2 className="mt-4 text-4xl font-black leading-tight md:text-5xl">
+        A simple automation system that works 24/7.
+      </h2>
+
+      <p className="mt-6 text-lg text-zinc-400">
+        From lead capture to follow-up emails and Discord notifications —
+        everything runs automatically in the background.
+      </p>
+    </div>
+
+    <div className="mt-20 grid gap-6 md:grid-cols-3">
+
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
+        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-green-500/10 text-2xl">
+          1
+        </div>
+
+        <h3 className="text-2xl font-bold">
+          Lead captured
+        </h3>
+
+        <p className="mt-4 text-zinc-400">
+          A customer fills out the form on your website.
+          The automation instantly captures all data.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
+        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-2xl">
+          2
+        </div>
+
+        <h3 className="text-2xl font-bold">
+          AI qualification
+        </h3>
+
+        <p className="mt-4 text-zinc-400">
+          AI analyzes the lead quality, scores the request
+          and decides what happens next.
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
+        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-500/10 text-2xl">
+          3
+        </div>
+
+        <h3 className="text-2xl font-bold">
+          Automated follow-up
+        </h3>
+
+        <p className="mt-4 text-zinc-400">
+          Your team receives notifications, CRM updates
+          and automated AI responses immediately.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
       <section id="contact" className="border-t border-white/10 bg-[#080808] px-6 py-24">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-start">
           <div>
