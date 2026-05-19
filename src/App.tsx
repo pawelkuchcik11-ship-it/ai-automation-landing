@@ -1,15 +1,5 @@
 import { useState } from "react";
-import {
-  ArrowRight,
-  Bot,
-  CalendarDays,
-  CheckCircle,
-  Database,
-  Mail,
-  MessageSquare,
-  Sparkles,
-  Zap,
-} from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const WEBHOOK_URL = "https://mysaveplace.app.n8n.cloud/webhook/lead-form";
 const CALENDLY_URL = "https://calendly.com/pawel-kuchcik11/30min";
@@ -222,30 +212,5 @@ export default function App() {
         </div>
       </section>
     </main>
-  );
-}
-
-function WorkflowItem({
-  icon,
-  title,
-  pl,
-  highlight = false,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  pl: string;
-  highlight?: boolean;
-}) {
-  return (
-    <div className={`flex items-center gap-4 rounded-2xl border p-4 ${highlight ? "border-yellow-400/40 bg-yellow-400/10" : "border-white/10 bg-white/[0.035]"}`}>
-      <div className={`flex h-10 w-10 items-center justify-center rounded-xl ${highlight ? "bg-yellow-400 text-black" : "bg-white/10 text-yellow-400"}`}>
-        {icon}
-      </div>
-      <div>
-        <p className="font-semibold">{title}</p>
-        <p className="text-xs text-zinc-500">({pl})</p>
-      </div>
-      <CheckCircle className="ml-auto text-yellow-400" size={18} />
-    </div>
   );
 }
