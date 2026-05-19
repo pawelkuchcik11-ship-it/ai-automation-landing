@@ -50,102 +50,134 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-[#050505] text-white">
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_10%,rgba(250,204,21,0.18),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_28%)]" />
+      <section className="relative overflow-hidden border-b border-white/10 bg-black text-white">
+  <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-black to-black opacity-90"></div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-8">
-          <nav className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-400 text-black shadow-[0_0_40px_rgba(250,204,21,0.35)]">
-                <Zap size={20} />
-              </div>
-              <div>
-                <p className="text-sm font-bold tracking-tight">Nodewave</p>
-                <p className="text-xs text-zinc-500">AI Automation Studio</p>
-              </div>
-            </div>
+  <div className="relative mx-auto max-w-7xl px-6 py-24 lg:flex lg:items-center lg:justify-between">
+    
+    <div className="max-w-2xl">
+      
+      <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-300 backdrop-blur">
+        <span className="h-2 w-2 rounded-full bg-green-400"></span>
+        AI Automation Studio for Local Businesses
+      </div>
 
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              className="rounded-full border border-white/10 bg-white px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-yellow-400"
-            >
-              Book a call <span className="text-zinc-500">(umów rozmowę)</span>
-            </a>
-          </nav>
+      <h1 className="text-5xl font-bold leading-tight tracking-tight lg:text-7xl">
+        Turn repetitive work into{" "}
+        <span className="bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent">
+          automated growth.
+        </span>
+      </h1>
 
-          <div className="grid gap-16 py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-            <div>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-400/10 px-4 py-2 text-sm text-yellow-300">
-                <Sparkles size={16} />
-                Built for local businesses <span className="text-yellow-100/60">(dla lokalnych firm)</span>
-              </div>
+      <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-400">
+        We build AI systems that capture leads, respond instantly,
+        organize customer communication and save hours every week.
+      </p>
 
-              <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
-                Turn missed leads into booked calls.
-                <span className="block text-yellow-400">Automatically.</span>
-              </h1>
+      <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+        
+        <a
+          href="https://calendly.com/pawel-kuchcik11/30min"
+          target="_blank"
+          className="rounded-xl bg-white px-6 py-4 text-center font-semibold text-black transition hover:scale-105 hover:bg-zinc-200"
+        >
+          Book Free Consultation
+        </a>
 
-              <p className="mt-7 max-w-2xl text-lg leading-8 text-zinc-300">
-                AI workflows that qualify leads, reply instantly and organize your customer communication
-                while you focus on running the business.
-              </p>
+        <a
+          href="#audit"
+          className="rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-center font-semibold text-white backdrop-blur transition hover:bg-white/10"
+        >
+          Get Free Audit
+        </a>
 
-              <p className="mt-3 max-w-2xl text-sm leading-6 text-zinc-500">
-                (Automatyzacje AI, które oceniają leady, odpowiadają klientom i porządkują komunikację,
-                gdy Ty zajmujesz się prowadzeniem firmy.)
-              </p>
+      </div>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-7 py-4 font-bold text-black transition hover:bg-yellow-300"
-                >
-                  Get Free Automation Audit <ArrowRight size={18} />
-                </a>
+      <div className="mt-12 flex flex-wrap gap-8 text-sm text-zinc-500">
+        <div>
+          <p className="text-2xl font-bold text-white">40h+</p>
+          <p>Saved Weekly</p>
+        </div>
 
-                <a
-                  href="#workflow"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
-                >
-                  See how it works <span className="text-zinc-500">(zobacz jak działa)</span>
-                </a>
-              </div>
+        <div>
+          <p className="text-2xl font-bold text-white">98%</p>
+          <p>Faster Response Time</p>
+        </div>
 
-              <div className="mt-12 grid max-w-2xl gap-4 sm:grid-cols-3">
-                {[
-                  ["8 sec", "AI response time", "czas odpowiedzi AI"],
-                  ["24/7", "Lead capture", "zbieranie leadów"],
-                  ["CRM", "Auto-sync", "automatyczny zapis"],
-                ].map(([value, label, pl]) => (
-                  <div key={label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
-                    <p className="text-2xl font-black text-yellow-400">{value}</p>
-                    <p className="mt-1 text-sm font-medium">{label}</p>
-                    <p className="text-xs text-zinc-500">({pl})</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+        <div>
+          <p className="text-2xl font-bold text-white">24/7</p>
+          <p>AI Lead Handling</p>
+        </div>
+      </div>
+    </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/[0.055] p-5 shadow-2xl backdrop-blur">
-              <div className="rounded-[1.5rem] border border-white/10 bg-black p-5">
-                <div className="mb-5 flex items-center justify-between">
-                  <p className="text-sm font-semibold">Live workflow preview</p>
-                  <p className="rounded-full bg-green-500/10 px-3 py-1 text-xs text-green-400">Running</p>
-                </div>
+    <div className="mt-16 lg:mt-0">
+      
+      <div className="w-full max-w-md rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+        
+        <div className="mb-4 flex items-center justify-between">
+          <div>
+            <p className="text-sm text-zinc-400">
+              Automation Dashboard
+            </p>
 
-                <div className="space-y-3">
-                  <WorkflowItem icon={<MessageSquare />} title="New lead submitted" pl="Nowy lead wysłany" />
-                  <WorkflowItem icon={<Bot />} title="AI qualifies the lead" pl="AI ocenia jakość leada" highlight />
-                  <WorkflowItem icon={<Database />} title="Saved to CRM" pl="Zapis do CRM" />
-                  <WorkflowItem icon={<Mail />} title="Email sent automatically" pl="Automatyczny email" />
-                  <WorkflowItem icon={<CalendarDays />} title="Call booked in Calendly" pl="Rozmowa umówiona w Calendly" />
-                </div>
-              </div>
-            </div>
+            <h3 className="text-xl font-semibold">
+              Live Lead Activity
+            </h3>
+          </div>
+
+          <div className="rounded-full bg-green-500/20 px-3 py-1 text-sm text-green-400">
+            Live
           </div>
         </div>
-      </section>
+
+        <div className="space-y-4">
+          
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-medium">New Lead Captured</p>
+                <p className="text-sm text-zinc-500">
+                  Dental Clinic
+                </p>
+              </div>
+
+              <span className="text-green-400">Hot Lead</span>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-medium">AI Email Sent</p>
+                <p className="text-sm text-zinc-500">
+                  Follow-up completed
+                </p>
+              </div>
+
+              <span className="text-blue-400">Success</span>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-medium">Meeting Booked</p>
+                <p className="text-sm text-zinc-500">
+                  Calendly synced
+                </p>
+              </div>
+
+              <span className="text-purple-400">Booked</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <section id="contact" className="border-t border-white/10 bg-[#080808] px-6 py-24">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-start">
