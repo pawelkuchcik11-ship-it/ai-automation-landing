@@ -39,7 +39,16 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-screen bg-[#050505] text-white">
+    <main className="relative min-h-screen overflow-hidden bg-[#050505] text-white">
+      <div className="absolute inset-0 overflow-hidden">
+
+  <div className="absolute left-[-10%] top-[10%] h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-3xl" />
+
+  <div className="absolute right-[-10%] top-[20%] h-[400px] w-[400px] rounded-full bg-blue-500/10 blur-3xl" />
+
+  <div className="absolute bottom-[-10%] left-[30%] h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-3xl" />
+
+</div>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
@@ -75,7 +84,7 @@ export default function App() {
       <section className="relative overflow-hidden border-b border-white/10 bg-black text-white">
   <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-black to-black opacity-90"></div>
 
-  <div className="relative mx-auto max-w-7xl px-6 py-24 lg:flex lg:items-center lg:justify-between">
+  <div className="relative mx-auto max-w-6xl px-6 py-32 lg:flex lg:items-center lg:justify-between lg:gap-14">
     
     <div className="max-w-2xl">
       
@@ -84,7 +93,7 @@ export default function App() {
         AI Automation Studio for Local Businesses
       </div>
 
-      <h1 className="text-5xl font-bold leading-tight tracking-tight lg:text-7xl">
+      <h1 className="max-w-3xl text-6xl font-black leading-[0.9] tracking-[-0.06em] lg:text-8xl">
         Turn repetitive work into{" "}
         <span className="bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent">
           automated growth.
@@ -101,7 +110,7 @@ export default function App() {
         <a
           href="https://calendly.com/pawel-kuchcik11/30min"
           target="_blank"
-          className="rounded-xl bg-white px-6 py-4 text-center font-semibold text-black transition hover:scale-105 hover:bg-zinc-200"
+          className="rounded-xl bg-white px-6 py-4 text-center font-semibold text-black transition-all duration-300 hover:scale-[1.03] hover:bg-zinc-200 hover:shadow-2xl"
         >
           Book Free Consultation
         </a>
@@ -133,7 +142,7 @@ export default function App() {
       </div>
     </div>
 
-    <div className="mt-16 lg:mt-0">
+    <div className="mt-16 lg:mt-8">
       
       <div className="w-full max-w-md rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
         
@@ -201,7 +210,9 @@ export default function App() {
   </div>
 </section>
 
-<section className="border-b border-white/10 bg-[#070707] px-6 py-24 text-white">
+<section
+  id="how-it-works"
+  className="border-b border-white/10 bg-[#070707] px-6 py-24 text-white">
   <div className="mx-auto max-w-7xl">
 
     <div className="max-w-2xl">
